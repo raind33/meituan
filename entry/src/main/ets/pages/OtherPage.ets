@@ -8,11 +8,13 @@ const storage = LocalStorage.GetShared()
 struct OtherPage {
   @State message: string = 'Hello World'
   @LocalStorageProp('user')
-  user: IUser = {}
+  user: IUser = {
+    age: 12
+  }
   build() {
     Row() {
       Column() {
-        Text(this.user.age.toString())
+        Text(this.user?.age?.toString())
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
       }

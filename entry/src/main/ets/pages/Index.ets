@@ -34,8 +34,10 @@ struct Index {
   aboutToAppear() {
     req.request('https://zhoushugang.gitee.io/fe2022/takeaway.json')
       .then(res => {
+
         const categoryList = JSON.parse(res.result as string) as Category[]
         this.categoryList = categoryList
+
       })
   }
 

@@ -2,8 +2,10 @@
 export struct CalcBtn {
 
   // 图标
+  @Prop
   icon: Resource
   // 是不是朴素的
+  @Prop
   plain: boolean
 
   build() {

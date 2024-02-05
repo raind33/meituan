@@ -13,7 +13,11 @@ export const addCart = (food: FoodItem | CartItemModel) => {
   }
   // 之前没有
   else {
-    const { id, price, picture, name } = food
+    const id = food.id
+    const price = food.price
+    const picture = food.picture
+    const name = food.name
+
     const cartFood: CartItemModel = {  id, price, picture, name , count: 1}
     list.push(cartFood)
   }

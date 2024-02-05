@@ -5,7 +5,7 @@ import { CalcBtn } from './CalcBtn'
 import { CartItem } from './CartItem'
 @Component
 export struct MenuWrapperItem {
-
+  @Prop
   item: FoodItem
 
   build() {
@@ -27,7 +27,7 @@ export struct MenuWrapperItem {
           })
           .maxLines(1)
 
-        ForEach(this.item.food_tag_list, (tag) => {
+        ForEach(this.item.food_tag_list, (tag: string) => {
           Text(tag)
             .fontSize(10)
             .backgroundColor('#fff5e2')

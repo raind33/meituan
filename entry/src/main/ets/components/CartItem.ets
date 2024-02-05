@@ -4,7 +4,7 @@ import { CalcBtn } from './CalcBtn'
 @Component
 export struct CartItem {
 
-  item: CartItemModel
+  @Prop item: CartItemModel
 
   build() {
     Row(){

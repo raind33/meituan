@@ -1,6 +1,7 @@
 {
   "src": [
     "pages/Index",
-    "pages/OtherPage"
+    "pages/OtherPage",
+    "pages/PullRefreshPage"
   ]
 }
