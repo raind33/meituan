@@ -5,10 +5,11 @@ struct PullRefreshPage {
   @State translateY: number = 0
   @State loading: boolean = false
 
+  // 阻尼效果
   getTranslateVal(distance: number) {
     const point = 60
     if(distance > point) {
-      return distance + (distance- point) * 0.3
+      return 60 + (distance- point) * 0.3
     }
     return distance
   }
@@ -16,11 +17,15 @@ struct PullRefreshPage {
     Row() {
       Stack({ alignContent: Alignment.Top }) {
         Row() {
-          LoadingProgress()
-            .width(30)
-            .height(100)
+          if(this.loading) {
+            LoadingProgress()
+              .width(30)
+              .aspectRatio(1)
+          }
+
           Text(this.text)
         }
+          .height(100)
 
         List() {
 
