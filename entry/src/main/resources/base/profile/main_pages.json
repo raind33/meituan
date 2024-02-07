@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/OtherPage",
     "pages/PullRefreshPage",
-    "pages/UserStorePage"
+    "pages/UserStorePage",
+    "pages/ClockPage"
   ]
 }
