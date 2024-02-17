@@ -1,9 +1,10 @@
 {
   "src": [
-    "pages/Index",
+    "pages/Meituan",
     "pages/OtherPage",
     "pages/PullRefreshPage",
     "pages/UserStorePage",
-    "pages/ClockPage"
+    "pages/ClockPage",
+    "pages/Index"
   ]
 }
