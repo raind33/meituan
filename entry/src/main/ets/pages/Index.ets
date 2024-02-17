@@ -12,6 +12,7 @@ PersistentStorage.PersistProp(KEY, '[]')
 @Entry
 @Component
 struct Index {
+
   @State
   showCart: boolean = false
 
