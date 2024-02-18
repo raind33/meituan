@@ -2,7 +2,7 @@ import router from '@ohos.router'
 import { UserModel } from '../../models/UserModel'
 
 
-const USER_KEY = 'interview-user'
+export const USER_KEY = 'interview-user'
 const PASS_LIST = ['pages/LoginPage', 'pages/Index']
 
 export class Auth {

@@ -1,9 +1,9 @@
 import mediaquery from '@ohos.mediaquery'
 import { vp2vp } from '../common/utils/Basic'
-// import { Home } from '../views/Index/Home'
-// import { Interview } from '../views/Index/Interview'
-// import { Mine } from '../views/Index/Mine'
-// import { Project } from '../views/Index/Project'
+import { Home } from '../views/Index/Home'
+import { Interview } from '../views/Index/Interview'
+import { Mine } from '../views/Index/Mine'
+import { Project } from '../views/Index/Project'
 
 class ToolBarItem {
   defaultIcon!: string | Resource
@@ -51,10 +51,10 @@ struct Index {
       ForEach(this.toolBars, (item: ToolBarItem, index: number) => {
         TabContent() {
           Text('2323')
-          // if (index ===0) Home()
-          // else if (index === 1) Project()
-          // else if (index === 2) Interview()
-          // else Mine()
+          if (index ===0) Home()
+          else if (index === 1) Project()
+          else if (index === 2) Interview()
+          else Mine()
         }
         .tabBar(this.TabBarBuilder(item, index))
       })

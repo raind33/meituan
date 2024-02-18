@@ -6,4 +6,5 @@ export class UserModel {
   refreshToken: string
   nickName?: string
   totalTime?: number
+  clockinNumbers?: number
 }
