@@ -50,7 +50,7 @@ struct Index {
     }) {
       ForEach(this.toolBars, (item: ToolBarItem, index: number) => {
         TabContent() {
-          Text('2323')
+
           if (index ===0) Home()
           else if (index === 1) Project()
           else if (index === 2) Interview()

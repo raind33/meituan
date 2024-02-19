@@ -5,17 +5,7 @@ import deviceInfo from '@ohos.deviceInfo'
 // 设计稿宽度
 const designWidth = 375
 // 物理像素
-const devicePhysics = display.getDefaultDisplaySync().width || 1275
-
-export const vp2vp = (originSize: number) => {
-  // useSize =  deviceWidth / designWidth * measureSize
-  // 只有 手机 才需要
-  console.log(devicePhysics+'')
-  if (deviceInfo.deviceType !== 'tablet') {
-    return px2vp(devicePhysics) / designWidth * originSize
-  }
-  return originSize
-}
+const devicePhysics = display.getDefaultDisplaySync().width
 
 export const formatTime = (time: number = 0, hasUnit: boolean = true) => {
   // 一小时内容显示  xxx 分钟
@@ -26,3 +16,14 @@ export const formatTime = (time: number = 0, hasUnit: boolean = true) => {
     return String(Math.floor(time / 3600 * 10) / 10) + (hasUnit ? '小时' : '')
   }
 }
+export const vp2vp = (originSize: number) => {
+  // useSize =  deviceWidth / designWidth * measureSize
+
+  console.log(devicePhysics+'')
+  // if (deviceInfo.deviceType !== 'tablet') {
+  //   return px2vp(devicePhysics) / designWidth * originSize
+  // }
+  return originSize
+}
+
+

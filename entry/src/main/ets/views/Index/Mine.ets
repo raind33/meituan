@@ -2,7 +2,7 @@ import router from '@ohos.router'
 import promptAction from '@ohos.promptAction'
 import { IvClock } from '../../common/components/IvClock'
 import { Auth, USER_KEY } from '../../common/utils/Auth'
-import { formatTime, vp2vp } from '../../common/utils/Basic'
+import { formatTime, vp2vp } from "../../common/utils/Basic"
 import { UserModel } from '../../models/UserModel'
 import emitter from '@ohos.events.emitter'
 import { LOGIN_EVENT } from '../../common/constants'
